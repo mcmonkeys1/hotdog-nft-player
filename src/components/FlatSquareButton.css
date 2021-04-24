@@ -1,0 +1,10 @@
+.flatStyleButton {
+	background-color: #babecafe;
+	border: 3px solid #cafebabe;
+	height: 100px;
+	width: 100px;
+	margin: 5px;
+}
+.flatStyleButton:active {
+	border-color: #febababe;
+}

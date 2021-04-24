@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './assets/icon.png';
 import './App.css';
+import FlatSquareButton from './components/FlatSquareButton';
+import { play101, sample101 } from './audio/index'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p style={{margin: 20,}}>Hotdog NFT Player</p>
       </header>
+
+      <div className="main">
+        <FlatSquareButton onClick={play101} onDoubleClick={()=>console.log('double-click')}/>
+        <FlatSquareButton onClick={sample101} onDoubleClick={()=>console.log('double-click')}/>
+        <FlatSquareButton onClick={()=>console.log('click')} onDoubleClick={()=>console.log('double-click')}/>
+        <FlatSquareButton onClick={()=>console.log('click')} onDoubleClick={()=>console.log('double-click')}/>
+      </div>
     </div>
   );
 }
