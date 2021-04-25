@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './assets/icon.png';
 import './App.css';
 import FlatSquareButton from './components/FlatSquareButton';
-import { play101, sample101 } from './audio/index'
+import { play101, sample101, thunderLoop } from './audio/audio'
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <div className="main">
         <FlatSquareButton onClick={play101} onDoubleClick={()=>console.log('double-click')}/>
         <FlatSquareButton onClick={sample101} onDoubleClick={()=>console.log('double-click')}/>
-        <FlatSquareButton onClick={()=>console.log('click')} onDoubleClick={()=>console.log('double-click')}/>
+        <FlatSquareButton onClick={thunderLoop} onDoubleClick={()=>console.log('double-click')}/>
         <FlatSquareButton onClick={()=>console.log('click')} onDoubleClick={()=>console.log('double-click')}/>
       </div>
     </div>
