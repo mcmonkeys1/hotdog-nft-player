@@ -14,7 +14,7 @@ function App() {
 
       <div className="main">
         <FlatSquareButton onClick={play101} onDoubleClick={()=>console.log('double-click')}/>
-        <FlatSquareButton onClick={sample101} onDoubleClick={()=>console.log('double-click')}/>
+        <FlatSquareButton onClick={sample101} onDoubleClick={()=>window.open('https://viewblock.io/arweave/tx/N_8cIeQ350ggWyga21OpO5cnWrijip7bNe3XPbSW1ZI','_blank')}/>
         <FlatSquareButton onClick={thunderLoop} onDoubleClick={()=>console.log('double-click')}/>
         <FlatSquareButton onClick={()=>console.log('click')} onDoubleClick={()=>console.log('double-click')}/>
       </div>

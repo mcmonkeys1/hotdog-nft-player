@@ -14,18 +14,18 @@ export const play101 = async()=> {
 
 export const sample101 = async()=> {
 	const player = new Tone.Player({
-		url: './samples/rattle10.mp3',
+		url: 'https://arweave.net/N_8cIeQ350ggWyga21OpO5cnWrijip7bNe3XPbSW1ZI',
 		// url: './samples/heavy-thunder-05.mp3',
 		loop: true,
 		autostart: true
 	})
 	await Tone.loaded()
 
-	const effect1 = new Tone.Phaser({
-		frequency: 0.05,
-		octaves: 3,
-		baseFrequency: 3000
-	}).toDestination() 
+	// const effect1 = new Tone.Phaser({
+	// 	frequency: 0.05,
+	// 	octaves: 3,
+	// 	baseFrequency: 3000
+	// }).toDestination() 
 	// effect1.toFrequency(5000)
 
 	// player.connect(effect1)
